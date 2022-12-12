@@ -1,0 +1,119 @@
+.myfav-special-box-container {
+    margin: 0 auto;
+    max-width: 1160px;
+}
+
+.myfav-special-box-left-small-container,
+.myfav-special-box-right-small-container {
+    display: flex;
+}
+
+@media screen and(min-width: @tabletViewportWidth) {
+    .myfav-special-box-container .myfavspecialbox {
+        display: flex;
+    }
+}
+
+.myfav-special-box-left,
+.myfav-special-box-right,
+.myfav-special-box-left-small-left,
+.myfav-special-box-left-small-right,
+.myfav-special-box-right-small-left,
+.myfav-special-box-right-small-right {
+    flex: 1;
+}
+
+.myfav-special-box-container img {
+    width: 100%;
+}
+
+.myfav-specialbox-left-big,
+.myfav-specialbox-right-big,
+.myfav-special-box-left-small-left,
+.myfav-special-box-left-small-right,
+.myfav-special-box-right-small-left,
+.myfav-special-box-right-small-right {
+    position: relative;
+}
+
+.myfav-special-box-container span {
+    bottom: 1.5rem;
+    font-size: .8rem;
+    font-weight: bold;
+    left: 2rem;
+    padding: 6px 16px;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+@media screen and(min-width: 550px) {
+    .myfav-special-box-container span {
+        font-size: 1rem;
+    }
+}
+
+@media screen and(min-width: @tabletViewportWidth) {
+    .myfav-special-box-container span {
+        font-size: .7rem;
+        padding: 4px 12px;
+    }
+    
+    .myfav-special-box-container .myfav-specialbox-left-big span {
+        bottom: 3rem!important;
+    }
+}
+
+@media screen and(min-width: @desktopViewportWidth) {
+    .myfav-special-box-container span {
+        font-size: 1.2rem;
+    }
+}
+
+.myfav-special-box-container .myfav-special-box-left-small-left span,
+.myfav-special-box-container .myfav-special-box-left-small-right span,
+.myfav-special-box-container .myfav-special-box-right-small-left span,
+.myfav-special-box-container .myfav-special-box-right-small-right span {
+    bottom: 1.5rem;
+}
+
+.myfav-special-box-container .emotion--sizer-xs,
+.myfav-special-box-container .emotion--sizer-s,
+.myfav-special-box-container .emotion--sizer-m,
+.myfav-special-box-container .emotion--sizer-l,
+.myfav-special-box-container .emotion--sizer-xl,
+.myfav-special-box-container .emotion--sizer {
+    display: none!important;
+}
+
+/* White boarders around the boxes */
+@media screen and(min-width: @tabletViewportWidth) {
+    .myfav-special-box-container {
+        padding-left: 24px;
+        padding-right: 12px;
+    }
+    
+    .myfav-special-box-left,
+    .myfav-special-box-left-small-left,
+    .myfav-special-box-right-small-left {
+        padding-right: 12px;
+    }
+
+    .myfav-special-box-right,
+    .myfav-special-box-left-small-right,
+    .myfav-special-box-right-small-right {
+        padding-left: 12px;
+    }
+
+    .myfav-specialbox-left-big {
+        padding-bottom: 24px;
+    }
+
+    .myfav-specialbox-right-big {
+        padding-top: 24px;
+    }
+
+    .myfav-special-box-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
